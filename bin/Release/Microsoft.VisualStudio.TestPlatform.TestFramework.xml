@@ -3233,9 +3233,8 @@
             <summary>
             Tests whether the specified collections are equal and throws an exception
             if the two collections are not equal. Equality is defined as having the same
-            elements in the same order and quantity. Whether two elements are the same
-            is checked using <see cref="M:System.Object.Equals(System.Object,System.Object)" /> method.
-            Different references to the same value are considered equal.
+            elements in the same order and quantity. Different references to the same
+            value are considered equal.
             </summary>
             <param name="expected">
             The first collection to compare. This is the collection the tests expects.
@@ -3253,9 +3252,8 @@
             <summary>
             Tests whether the specified collections are equal and throws an exception
             if the two collections are not equal. Equality is defined as having the same
-            elements in the same order and quantity. Whether two elements are the same
-            is checked using <see cref="M:System.Object.Equals(System.Object,System.Object)" /> method.
-            Different references to the same value are considered equal.
+            elements in the same order and quantity. Different references to the same
+            value are considered equal.
             </summary>
             <param name="expected">
             The first collection to compare. This is the collection the tests expects.
@@ -3278,9 +3276,8 @@
             <summary>
             Tests whether the specified collections are equal and throws an exception
             if the two collections are not equal. Equality is defined as having the same
-            elements in the same order and quantity. Whether two elements are the same
-            is checked using <see cref="M:System.Object.Equals(System.Object,System.Object)" /> method.
-            Different references to the same value are considered equal.
+            elements in the same order and quantity. Different references to the same
+            value are considered equal.
             </summary>
             <param name="expected">
             The first collection to compare. This is the collection the tests expects.
@@ -3306,9 +3303,8 @@
             <summary>
             Tests whether the specified collections are unequal and throws an exception
             if the two collections are equal. Equality is defined as having the same
-            elements in the same order and quantity. Whether two elements are the same
-            is checked using <see cref="M:System.Object.Equals(System.Object,System.Object)" /> method.
-            Different references to the same value are considered equal.
+            elements in the same order and quantity. Different references to the same
+            value are considered equal.
             </summary>
             <param name="notExpected">
             The first collection to compare. This is the collection the tests expects
@@ -3326,9 +3322,8 @@
             <summary>
             Tests whether the specified collections are unequal and throws an exception
             if the two collections are equal. Equality is defined as having the same
-            elements in the same order and quantity. Whether two elements are the same
-            is checked using <see cref="M:System.Object.Equals(System.Object,System.Object)" /> method.
-            Different references to the same value are considered equal.
+            elements in the same order and quantity. Different references to the same
+            value are considered equal.
             </summary>
             <param name="notExpected">
             The first collection to compare. This is the collection the tests expects
@@ -3351,9 +3346,8 @@
             <summary>
             Tests whether the specified collections are unequal and throws an exception
             if the two collections are equal. Equality is defined as having the same
-            elements in the same order and quantity. Whether two elements are the same
-            is checked using <see cref="M:System.Object.Equals(System.Object,System.Object)" /> method.
-            Different references to the same value are considered equal.
+            elements in the same order and quantity. Different references to the same
+            value are considered equal.
             </summary>
             <param name="notExpected">
             The first collection to compare. This is the collection the tests expects
@@ -4047,7 +4041,7 @@
             Initializes a new instance of the <see cref="T:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute"/> class.
             </summary>
             <param name="displayName">
-            Display Name for the Test Window
+            Message specifies reason for ignoring.
             </param>
         </member>
         <member name="P:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.DisplayName">
@@ -4075,7 +4069,7 @@
         </member>
         <member name="T:Microsoft.VisualStudio.TestTools.UnitTesting.TestCleanupAttribute">
             <summary>
-            The test cleanup attribute marks methods that are executed after every test marked with a <see cref="T:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute"/>.
+            The test cleanup attribute.
             </summary>
         </member>
         <member name="T:Microsoft.VisualStudio.TestTools.UnitTesting.IgnoreAttribute">
