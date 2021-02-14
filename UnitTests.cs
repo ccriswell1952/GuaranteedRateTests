@@ -582,7 +582,7 @@ namespace GuaranteedRateTests
             DataHandler dataHandler = new DataHandler();
             List<CollectionItem> list = new List<CollectionItem>();
 
-            for (int i = 0; i < 30; i++)
+            for (int i = 0; i < 6; i++)
             {
                 var firstName = FirstNameList.RandomElement();
                 var lastName = LastNameList.RandomElement();
@@ -665,7 +665,7 @@ namespace GuaranteedRateTests
         public void TestGetCollectionItemsFromCommaDelimitedFile()
         {
             DataHandler dataHandler = new DataHandler();
-            List<CollectionItem> list = dataHandler.GetCollectionItemsFromFile("Comma");
+            List<CollectionItem> list = dataHandler.GetCollectionItemsFromFile("All");
             list = list.OrderBy(o => o.FirstName).ToList();
             foreach (var item in list)
             {
