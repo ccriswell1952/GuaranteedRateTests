@@ -1,11 +1,13 @@
 ﻿using GuaranteedRateConsoleApp.DataLayer;
 using GuaranteedRateConsoleApp.Models;
-using GuaranteedRateTests.Utilities;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+
+/// <summary>
+/// Tests for the Guaranteed Rates Console Applicaiton
+/// </summary>
 namespace GuaranteedRateTests
 {
     [TestClass]
@@ -580,25 +582,8 @@ namespace GuaranteedRateTests
         public void TestAddCollectionItems()
         {
             DataHandler dataHandler = new DataHandler();
-            List<CollectionItem> list = new List<CollectionItem>();
-
-            for (int i = 0; i < 6; i++)
-            {
-                var firstName = FirstNameList.RandomElement();
-                var lastName = LastNameList.RandomElement();
-                CollectionItem ci = new CollectionItem()
-                {
-                    FirstName = firstName,
-                    LastName = lastName,
-                    FavoriteColor = ColorList.RandomElement(),
-                    DateOfBirth = RandomDateGenerator(),
-                    Email = firstName + lastName + "@" + RandomStringGenerator(2) + "Email.com"
-                };
-                list.Add(ci);
-            }
-
-            var content = JsonConvert.SerializeObject(list);
-            bool wasAdded = dataHandler.AddCollectionItems(content);
+            Dictionary<int, int> recordCountDic = new Dictionary<int, int>();
+            bool wasAdded = dataHandler.GenerateNewCollectionItems(out recordCountDic);
             TestGetCollectionItemsFromCommaDelimitedFile();
             Assert.IsTrue(wasAdded);
         }
@@ -646,6 +631,36 @@ namespace GuaranteedRateTests
             var listCount = list.Count;
             Console.WriteLine(listCount.ToString());
             Assert.IsTrue(listCount > 0);
+        }
+
+        [TestMethod]
+        public void TestGetCollectionItemFromBarDelimitedString()
+        {
+            string delimitedString = @"Castro|Billy|BillyCastro@Mail.com|Indigo|11/2/1961";
+            DataHandler dataHandler = new DataHandler();
+            CollectionItem item = dataHandler.GetCollectionItemFromDelimitedString(delimitedString);
+            Console.WriteLine(item.FirstName + " " + item.LastName + " - Favorite Color: " + item.FavoriteColor + " - dob: " + item.DateOfBirth + " - email: " + item.Email);
+            Assert.IsTrue(!string.IsNullOrEmpty(item.LastName));
+        }
+
+        [TestMethod]
+        public void TestGetCollectionItemFromCommaDelimitedString()
+        {
+            string delimitedString = @"Watson,Chili,ChiliWatson@Mail.com,Alabaster,10/21/1987";
+            DataHandler dataHandler = new DataHandler();
+            CollectionItem item = dataHandler.GetCollectionItemFromDelimitedString(delimitedString);
+            Console.WriteLine(item.FirstName + " " + item.LastName + " - Favorite Color: " + item.FavoriteColor + " - dob: " + item.DateOfBirth + " - email: " + item.Email);
+            Assert.IsTrue(!string.IsNullOrEmpty(item.LastName));
+        }
+
+        [TestMethod]
+        public void TestGetCollectionItemFromTabDelimitedString()
+        {
+            string delimitedString = "Chandelton	Sally	SallyCaldelton@Mail.com	White	7/14/1982";
+            DataHandler dataHandler = new DataHandler();
+            CollectionItem item = dataHandler.GetCollectionItemFromDelimitedString(delimitedString);
+            Console.WriteLine(item.FirstName + " " + item.LastName + " - Favorite Color: " + item.FavoriteColor + " - dob: " + item.DateOfBirth + " - email: " + item.Email);
+            Assert.IsTrue(!string.IsNullOrEmpty(item.LastName));
         }
 
         [TestMethod]
@@ -697,6 +712,7 @@ namespace GuaranteedRateTests
             Console.WriteLine(fullPath);
             Assert.IsTrue(fullPath.Contains("CollectionItemsCommaDelimited"));
         }
+
         [TestMethod]
         public void TestGetSortedList1()
         {

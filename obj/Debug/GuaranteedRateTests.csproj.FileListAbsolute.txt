@@ -20,6 +20,8 @@ C:\Users\Chuck\source\repos\GuaranteedRateTests\obj\Debug\GuaranteedRateTests.pd
 C:\Users\Chuck\source\repos\GuaranteedRateTests\bin\Debug\GuaranteedRateConsoleApp.exe
 C:\Users\Chuck\source\repos\GuaranteedRateTests\bin\Debug\GuaranteedRateConsoleApp.pdb
 C:\Users\Chuck\source\repos\GuaranteedRateTests\bin\Debug\GuaranteedRateConsoleApp.exe.config
+C:\Users\Chuck\source\repos\GuaranteedRateConsoleAppTest\obj\Debug\GuaranteedRateTests.csprojAssemblyReference.cache
+C:\Users\Chuck\source\repos\GuaranteedRateConsoleAppTest\obj\Debug\GuaranteedRateTests.csproj.CoreCompileInputs.cache
 C:\Users\Chuck\source\repos\GuaranteedRateConsoleAppTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
 C:\Users\Chuck\source\repos\GuaranteedRateConsoleAppTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
 C:\Users\Chuck\source\repos\GuaranteedRateConsoleAppTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
@@ -37,8 +39,6 @@ C:\Users\Chuck\source\repos\GuaranteedRateConsoleAppTest\bin\Debug\GuaranteedRat
 C:\Users\Chuck\source\repos\GuaranteedRateConsoleAppTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
 C:\Users\Chuck\source\repos\GuaranteedRateConsoleAppTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
 C:\Users\Chuck\source\repos\GuaranteedRateConsoleAppTest\bin\Debug\Newtonsoft.Json.xml
-C:\Users\Chuck\source\repos\GuaranteedRateConsoleAppTest\obj\Debug\GuaranteedRateTests.csprojAssemblyReference.cache
-C:\Users\Chuck\source\repos\GuaranteedRateConsoleAppTest\obj\Debug\GuaranteedRateTests.csproj.CoreCompileInputs.cache
 C:\Users\Chuck\source\repos\GuaranteedRateConsoleAppTest\obj\Debug\GuaranteedRateTests.csproj.CopyComplete
 C:\Users\Chuck\source\repos\GuaranteedRateConsoleAppTest\obj\Debug\GuaranteedRateTests.dll
 C:\Users\Chuck\source\repos\GuaranteedRateConsoleAppTest\obj\Debug\GuaranteedRateTests.pdb

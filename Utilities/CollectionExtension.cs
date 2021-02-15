@@ -3,6 +3,9 @@ using System.Collections.Generic;
 
 namespace GuaranteedRateTests.Utilities
 {
+    /// <summary>
+    /// Extension classes for collections
+    /// </summary>
     public static class CollectionExtension
     {
 

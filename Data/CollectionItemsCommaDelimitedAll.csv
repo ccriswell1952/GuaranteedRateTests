@@ -127,7 +127,7 @@ DateOfBirth,Email,FavoriteColor,FirstName,LastName
 5/30/2007,AaliyahColeman@PgEmail.com,Cedar Chest,Aaliyah,Coleman
 1/13/1997,JayceEvans@QmEmail.com,Ao (English),Jayce,Evans
 8/3/2008,GabrielMitchell@DsEmail.com,Cool grey,Gabriel,Mitchell
-2/4/2020,IsabellaGriffinÂ @BiEmail.com,Bole,Isabella,Griffin
+2/4/2020,IsabellaGriffinÃ‚Â @BiEmail.com,Bole,Isabella,Griffin
 3/13/2020,AsherAlexander@NhEmail.com,Blue-green (color wheel),Asher,Alexander
 1/14/2011,JacksonMartinez@WiEmail.com,Dark green (X11),Jackson,Martinez
 3/8/2001,MatthewAlexander@MeEmail.com,Cadet blue (Crayola),Matthew,Alexander
@@ -144,8 +144,14 @@ DateOfBirth,Email,FavoriteColor,FirstName,LastName
 2/17/2007,ChloeRussell@XbEmail.com,French raspberry,Chloe,Russell
 4/25/1999,SebastianRobinson@KlEmail.com,Cyan,Sebastian,Robinson
 10/7/2006,CadenGarcia@DgEmail.com,Charm pink,Caden,Garcia
-6/23/2014,MichaelHernandez@GzEmail.com,CafÃ© au lait,Michael,Hernandez
+6/23/2014,MichaelHernandez@GzEmail.com,CafÃƒÂ© au lait,Michael,Hernandez
 2/17/2018,LukeCooper@PaEmail.com,Coffee,Luke,Cooper
 4/3/2013,MiaMoore@DsEmail.com,CG blue,Mia,Moore
 6/8/2020,OliverAdams@TcEmail.com,Carnation pink,Oliver,Adams
 2/18/2006,MiaPhillips@LfEmail.com,Black,Mia,Phillips
+4/12/2001,IslaHill@GvEmail.com,Red,Isla,Hill
+7/9/2016,GraysonBailey@WtEmail.com,Black Shadows,Grayson,Bailey
+2/11/2017,KinsleyBailey@VaEmail.com,Amber,Kinsley,Bailey
+4/8/2014,WilliamHarris@TnEmail.com,Cadmium orange,William,Harris
+7/19/2016,IslaDavis@JwEmail.com,Black Shadows,Isla,Davis
+7/20/1995,JacobGreen@GmEmail.com,Ash gray,Jacob,Green
